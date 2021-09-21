@@ -722,11 +722,27 @@ body {
   }
 }
 .intro2 {
-  display: inline-block;
+  position: absolute;
+  display: flex;
+  max-width: 80%;
+  max-height: 90%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
   padding-top: 100px;
+}
+@media (max-width: 1180px) {
+  .intro2 {
+    max-width: 100%;
+  }
+}
+
+.intro2 h1 {
+  padding-left: 100px;
 }
 
 .intro2 article {
+  overflow: auto;
   column-width: 13em;
   column-gap: 0.5em;
 }
@@ -912,8 +928,14 @@ body {
   position: relative;
   justify-content: center;
   padding: 0px 250px;
-  margin-right: auto;
-  margin-left: auto;
+}
+@media (max-width: 900px) {
+  .team {
+    padding: 0px;
+    margin: 0px;
+    padding-right: 20px;
+    margin-right: 30px;
+  }
 }
 
 .team .row {
@@ -926,6 +948,15 @@ body {
     max-width: 100%;
   }
 }
+@media (max-width: 900px) {
+  .team .row {
+    grid-template-columns: repeat(2, 1fr);
+    transform: scale(0.68);
+    padding: 0px;
+    margin: 0px;
+    padding-right: 20px;
+  }
+}
 
 .our-team {
   border-radius: 15px;
@@ -935,6 +966,13 @@ body {
   margin-bottom: 20px;
   background: #353535;
   display: block;
+}
+@media (max-width: 900px) {
+  .our-team {
+    padding: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .our-team:hover {
@@ -1026,7 +1064,7 @@ body {
 div.scrollmenu {
   margin-top: 150px;
   margin-right: auto;
-  overflow: scroll;
+  overflow-x: hidden;
   white-space: nowrap;
   height: 80%;
 }
@@ -1125,48 +1163,6 @@ div.scrollmenu {
   justify-content: center;
 }
 
-/* Social */
-.social-fa {
-  padding-top: 30px;
-  display: block;
-}
-
-.social-fa .fa-stack {
-  width: 2em;
-  margin-bottom: 0.75rem;
-  margin-right: 0.375rem;
-  font-size: 1.5rem;
-}
-
-.social-fa .fa-stack .fa-stack-1x {
-  color: #fff;
-  transition: all 0.2s ease;
-}
-
-.social-fa .fa-stack .fa-stack-2x {
-  color: #03a4ed;
-  transition: all 0.2s ease;
-}
-
-.social-fa .fa-stack:hover .fa-stack-1x {
-  color: #03a4ed;
-}
-
-.social-fa .fa-stack:hover .fa-stack-2x {
-  color: #f3f7fd;
-}
-
-/* floating back button */
-.profile-go-back button {
-  position: fixed;
-  margin-left: 72%;
-  margin-bottom: 30px;
-  color: #fff;
-  background-color: purple;
-  font-weight: bold;
-  text-decoration: italic;
-}
-
 .card-container {
   white-space: normal;
   background-color: #231E39;
@@ -1182,6 +1178,7 @@ div.scrollmenu {
   text-align: center;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .card-container .pro {
@@ -1239,6 +1236,48 @@ button.primary .ghost {
   font-size: 12px;
   margin: 0 7px 7px 0;
   padding: 7px;
+}
+
+/* Social */
+.social-fa {
+  padding-top: 30px;
+  display: block;
+}
+
+.social-fa .fa-stack {
+  width: 2em;
+  margin-bottom: 0.75rem;
+  margin-right: 0.375rem;
+  font-size: 1.5rem;
+}
+
+.social-fa .fa-stack .fa-stack-1x {
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.social-fa .fa-stack .fa-stack-2x {
+  color: #03a4ed;
+  transition: all 0.2s ease;
+}
+
+.social-fa .fa-stack:hover .fa-stack-1x {
+  color: #03a4ed;
+}
+
+.social-fa .fa-stack:hover .fa-stack-2x {
+  color: #f3f7fd;
+}
+
+/* floating back button */
+.profile-go-back button {
+  position: fixed;
+  margin-left: 72%;
+  margin-bottom: 30px;
+  color: #fff;
+  background-color: purple;
+  font-weight: bold;
+  text-decoration: italic;
 }
 
 .about {
