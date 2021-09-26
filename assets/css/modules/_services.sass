@@ -1,0 +1,145 @@
+.services
+  position: relative
+  display: flex
+  width: 900px
+  max-width: 75%
+  height: 100%
+  flex-direction: column
+  justify-content: center
+  margin: 0 auto
+
+  @media (max-width: 800px)
+    padding-top: 12vh
+
+.services h1
+  text-align: center
+  padding-bottom: 2vh
+
+  @media (max-width: 500px)  and (max-height: 900px) 
+    margin-bottom: -120px
+
+.scontainer 
+  position: relative
+  left: calc(50% - 280px)
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+
+  @media (max-width: 1030px) and (max-height: 800px)
+    top: -20px
+    transform: scale(0.8)
+
+  @media (max-width: 600px)
+    top: -40px
+    margin-left: 50%
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 150px 150px 150px 200px 200px
+    transform: scaleX(0.8) scaleY(0.6)
+
+  @media (max-width: 400px) and (max-height: 800px)
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 150px 150px 150px 150px 200px
+
+.scard 
+  display: flex
+  height: 280px
+  width: 200px
+  background-color: #17141d
+  box-shadow: -1rem 0 3rem #000
+  border-radius: 10px
+  /*   margin-left: -50px; */
+  transition: 0.4s ease-out
+  position: relative
+  left: 0px
+  backdrop-filter: blur(16px) saturate(180%)
+  -webkit-backdrop-filter: blur(16px) saturate(180%)
+  background-color: rgba(17, 25, 40, 0.75)
+  border-radius: 12px
+  border: 1px solid rgba(255, 255, 255, 0.125)
+  
+  
+.scard:not(:first-child) 
+  margin-left: -50px
+  
+  
+.scard:hover 
+  transform: translateY(-20px)
+  transition: 0.4s ease-out
+  
+  
+.scard:hover ~ .scard 
+  position: relative
+  left: 50px
+  transition: 0.4s ease-out
+  
+  
+.title 
+  color: white
+  font-weight: 300
+  position: absolute
+  left: 20px
+  top: 15px
+  
+  
+.bar 
+  position: absolute
+  top: 100px
+  left: 20px
+  height: 5px
+  width: 150px
+  
+  
+.emptybar 
+  background-color: #2e3033
+  width: 100%
+  height: 100%
+  
+  
+.filledbar 
+  position: absolute
+  top: 0px
+  z-index: 3
+  width: 0px
+  height: 100%
+  background: rgb(0,154,217)
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%)
+  transition: 0.6s ease-out
+  
+  
+.scard:hover .filledbar 
+  width: 120px
+  transition: 0.4s ease-out
+  
+  
+.circle 
+  position: absolute
+  top: 150px
+  left: calc(50% - 60px)
+  
+svg 
+  fill: #17141d
+  stroke-width: 2px
+
+.stroke 
+  stroke: white
+  stroke-dasharray: 360
+  stroke-dashoffset: 360
+  transition: 0.6s ease-out
+
+.scard:hover .strokee
+  stroke-dashoffset: 100
+  transition: 0.6s ease-out
+
+.scard:hover .checkmark 
+  stroke: #06567a
+  stroke-dashoffset: 745.74853515625
+  stroke-dasharray: 745.74853515625
+  animation: dash 2s ease-out forwards
+
+@keyframes dash 
+  0% 
+    stroke-dashoffset: 745.74853515625
+  100% 
+    stroke-dashoffset: 0
+  
+
+  

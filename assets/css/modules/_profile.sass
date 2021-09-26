@@ -1,29 +1,43 @@
 .profile
   position: relative
   display: flex
-  width: 960px
-  max-width: 80%
-  height: 100%
   flex-direction: column
+  max-width: 100vw
   justify-content: center
+  align-content: center
+  align-items: center
+  margin-top: 0px
+  margin-left: auto
+  margin-right: auto
 
+  @media (min-width: 1180px)
+    margin-left: 33%
 
-.card-container 
+.profile-wrapper
+  display: flex
+  flex: 1
+  justify-content: center
+  align-items: center
+  align-content: center
+  min-height: 0px
+
+.card-container
+  width: 33vw
+  display: fixed
+  overflow: auto
   white-space: normal
-  background-color: #231E39
+  align: center
+  justify-content: center
+  align-content: center
+  align-items: center
+  text-align: center
+  background-color: #17141d
   color: #B3B8CD
-  margin-left: 30%
-  width: 100%
-  height: 95%
   border-radius: 5px
-  max-width: 100%
   box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75)
   padding-top: 30px
-  position: relative
-  text-align: center
-  align-items: center
-  justify-content: center
-  overflow: hidden
+  padding-bottom: 10px
+
 
 
 .card-container .pro 
@@ -120,11 +134,8 @@ button.primary .ghost
 /* floating back button */
 .profile-go-back button
   position: fixed
-  margin-left: 72%
-  margin-bottom: 30px
+  bottom: 40px
+  right: 40px
   color: #fff
-  background-color: purple
-  font-weight: bold
-  text-decoration: italic
-
-
+  background-color: #502766
+  font-size: 10px

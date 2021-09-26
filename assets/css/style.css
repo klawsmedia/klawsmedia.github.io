@@ -1,0 +1,14 @@
+body .cimg { 
+    background-image:url("https://images.pexels.com/photos/374018/pexels-photo-374018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    opacity:0.4;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:-1;
+}

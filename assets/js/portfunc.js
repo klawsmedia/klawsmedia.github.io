@@ -1,9 +1,9 @@
 var imgPath = 'assets/images/team/';
 var team = {
-    'harshit-jawla': [true, 'harshit-jawla.png', 'Harshit Jawla', 'Full Stack Dev', 'Developer', 'links ', ['JavaScript','HTML5','CSS3','Express','React','Flutter','Node']],
-    'ketan-sharma': [true, 'ketan-sharma.jpg', 'Ketan Sharma', 'Digital Marketer', 'Tourist', 'links', ['Marketing','Growth','SEO','Analyst','Social Presence']],
-    'kartik-aggarwal': [true, 'kartik-aggarwal.jpg', 'Kartik Aggarwal', 'UI-UX Designer', 'Developer', 'links', ['UI-UX','Social Media','Figma','Content Master']],
-    'siddharth-gupta': [true, 'siddharth-gupta.png', 'Siddharth Gupta', 'SEO Expert', 'Creator', 'links', ['Web App Dev','MEAN Stack','Social Media','SEO','Core']],
+    'harshit-jawla': [false, 'harshit-jawla.png', 'Harshit Jawla', 'Full Stack Dev', 'Developer', 'links ', ['JavaScript','HTML5','CSS3','Express','React','Flutter','Node']],
+    'ketan-sharma': [false, 'ketan-sharma.jpg', 'Ketan Sharma', 'Digital Marketer', 'Tourist', 'links', ['Marketing','Growth','SEO','Analyst','Social Presence']],
+    'kartik-aggarwal': [false, 'kartik-aggarwal.jpg', 'Kartik Aggarwal', 'UI-UX Designer', 'Developer', 'links', ['UI-UX','Social Media','Figma','Content Master']],
+    'siddharth-gupta': [false, 'siddharth-gupta.png', 'Siddharth Gupta', 'SEO Expert', 'Creator', 'links', ['Web App Dev','MEAN Stack','Social Media','SEO','Core']],
 };
 
 function showPortfolio(el) {

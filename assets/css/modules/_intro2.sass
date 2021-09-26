@@ -1,27 +1,29 @@
 .intro2 
-  position: absolute
+  position: relative
   display: flex
-  max-width: 80%
-  max-height: 90%
+  min-height: 0
   flex-direction: column
-  justify-content: center
-  margin: 0 auto
-  padding-top: 100px
-  
-  @media (max-width: 1180px)
-    max-width: 100%
-
+  overflow: scroll
 
 .intro2 h1
-  padding-left: 100px
+  text-align: center
 
-.intro2  article
-  overflow: auto
+.intro2 .intro-back
+  position: fixed
+  bottom: 40px
+  right: 10vw
+  color: #fff
+  background-color: blue
+  font-weight: bold
+  cursor: vertical-text
+
+.intro2 article
+  flex: 1
   column-width: 13em
   column-gap: 0.5em
 
 
-.intro2  article section 
+.intro2 article section 
   box-sizing:  border-box
   display: inline-block
   margin:  0.25rem
@@ -29,7 +31,7 @@
   width:  100%
   border: 0.1em solid black
 
-.intro2  article section p
+.intro2 article section p
   font-size: 14px
   text-align:  left
   margin:  1rem 0

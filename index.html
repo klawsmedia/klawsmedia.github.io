@@ -8,11 +8,14 @@
   <meta name="description" content="HTML5 website template">
   <meta name="keywords" content="global, template, html, sass, jquery">
   <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-all.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/fontawesome-all.css">
   </head>
 <body>
+
+  <div class='cimg'></div>
 
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
@@ -40,9 +43,11 @@
         <nav class="l-side-nav">
           <ul class="side-nav">
             <li class="is-active"><span>Home</span></li>
-            <li><span>Works</span></li>
+            <li><span>Goals</span></li>
+            <li><span>Services</span></li>
+            <li><span>Clients</span></li>
             <li><span>Team</span></li>
-            <li><span>Career</span></li>
+            <li><span>Join</span></li>
             <li><span>Contact</span></li>
             <li><span>Hire us</span></li>
           </ul>
@@ -52,7 +57,7 @@
             <div class="intro">
               <div class='intro1'>
               <div class="intro--banner">
-                <h1>We make<br>Digital<br>Solutions</h1>
+                <h1>The exact media and <br> marketing agency <br> you’ve been <br> looking for</h1>
                 <button class="cta">Hire Us
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -61,10 +66,10 @@
                   </svg>
                   <span class="btn-background"></span>
                 </button>
-                <img src="assets/img/introduction-visual.png" alt="Welcome">
+                <!--<img src="assets/img/introduction-visual.png" alt="Welcome">-->
               </div>
-              <div align="right" style="padding:10px" class='intro-next' onClick='introNext(this)'>
-                  <b>NEXT</b> <i class="fas fa-arrow-right"></i>
+              <div class='intro-next' onClick='introNext(this)'>
+                  <b>More</b> <i class="fas fa-arrow-right"></i>
               </div>
               <div class="intro--options">
                 <a href="#">
@@ -82,7 +87,10 @@
               </div>
             </div>
             <div class="intro2" style="display:none">
-              <h1>Our Services</h1>
+              <h1>Our Features</h1>
+              <div class='intro-back' onClick='introBack(this)'>
+                <i class="fas fa-arrow-left"></i><b> BACK</b> 
+              </div>
               <article>
               
                 <section>
@@ -102,9 +110,7 @@
                 <section>
                   <p>From making a business to a brand, to personal branding, you can expect everything from us.</p>
                 </section>
-                <div align="right" style="padding-right:10px;justify-content:right" class='intro-next' onClick='introBack(this)'>
-                  <i class="fas fa-arrow-left"></i><b> BACK</b> 
-              </div>
+
                 <section>
                   <p>We use the right and latest tools and practices with creative approaches to achieve all the marketing goals to scale and grow a business
                         or reach of an individual or brand. We’re open to suggestions, discussions and practical talks about targets.</p>
@@ -122,9 +128,232 @@
 
           </li>
 
+        
+          <li class="l-section section">
+            <div class="our-goals">
+              <h2>Our Goals</h2>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="assets/images/goals/go1.jpg">
+                      <div class="info">
+                        <h1> Internet </h1>
+                        <p>We know the internet's impact and the opportunity created</p>
+                        <button class="cta">Let’s Start</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="assets/images/goals/go2.jpg">
+                      <div class="info">
+                        <h1> Goals </h1>
+                        <p>Your expectations are the goals we strive far</p>
+                        <button class="cta">Let’s Communicate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="assets/images/goals/go3.jpg">
+                      <div class="info">
+                        <h1> Result </h1>
+                        <p>More consumer centric more result oriented</p>
+                        <button class="cta">Let’s be limitless</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="assets/images/goals/go4.jpg">
+                      <div class="info">
+                        <h1> Approach </h1>
+                        <p>We use consumer's signal as an indication for what's next</p>
+                        <button class="cta">Let’s Pitch</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="assets/images/goals/go5.jpg">
+                      <div class="info">
+                        <h1> Branding </h1>
+                        <p>From making a business to brand, to personal branding, you can expect everything from us</p>
+                        <button class="cta">Let’s Grab</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="assets/images/goals/go6.jpg">
+                      <div class="info">
+                        <h1> Work </h1>
+                        <p>We make goals from ideas and break goals into targets, to achieve what we are hired for</p>
+                        <button class="cta">Let’s Achieve</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="assets/images/goals/go7.jpg">
+                      <div class="info">
+                        <h1> Results </h1>
+                        <p>We are all about work and results</p>
+                        <button class="cta">Let’s Get</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </li>
+
+          <li class="l-section section">
+            <div class="services">
+              <h1>Our Services</h1>
+              <div class="scontainer">
+                <div class="scard">
+                  <h3 class="title">Facebook & Google Ads</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div class="circle">
+                    <svg>
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,
+                      45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="scard">
+                  <h3 class="title">Email Marketing</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div class="circle">
+                    <svg>
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,
+                      45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="scard">
+                  <h3 class="title">SMS Marketing</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div class="circle">
+                    <svg>
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,
+                      45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="scard">
+                  <h3 class="title">Social Media Handling</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div class="circle">
+                    <svg>
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,
+                      45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="scard">
+                  <h3 class="title">Personal Branding</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div class="circle">
+                    <svg>
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,
+                      45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="scard">
+                  <h3 class="title">UI-UX Design</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div class="circle">
+                    <svg>
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,
+                      45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="scard">
+                  <h3 class="title">Ad Films</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div class="circle">
+                    <svg>
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,
+                      45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="scard">
+                  <h3 class="title">Website Development</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div class="circle">
+                    <svg>
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,
+                      45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="scard">
+                  <h3 class="title">Network Growth</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div class="circle">
+                    <svg>
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,
+                      45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="scard">
+                  <h3 class="title">SEO Optimization</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div class="circle">
+                    <svg>
+                      <path class="checkmark" fill="none" stroke-width="8" stroke-miterlimit="10" d="M81.7,17.8C73.5,9.3,62,4,49.2,4C24.3,4,4,24.3,4,49.2s20.3,45.2,45.2,
+                      45.2s45.2-20.3,45.2-45.2c0-8.6-2.4-16.6-6.5-23.4l0,0L45.6,68.2L24.7,47.3"/>
+                    </svg>
+                  </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
           <li class="l-section section">
             <div class="work">
-              <h2>Our works</h2>
+              <h2>Our Clients</h2>
               <div class="work--lockup">
                 <ul class="slider">
                   <li class="slider--item slider--item-left">
@@ -180,6 +409,7 @@
            <div class="scrollmenu">
 
        <div class="profile" style="display:none">
+          <div class="profile-wrapper">
 
             <div class="card-container">
               <span class="pro">FOUNDER</span>
@@ -215,12 +445,6 @@
                                     <span class="fa-stack">
                                         <a href="#">
                                             <i class="fas fa-circle fa-stack-2x"></i>
-                                            <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                                        </a>
-                                    </span>
-                                    <span class="fa-stack">
-                                        <a href="#">
-                                            <i class="fas fa-circle fa-stack-2x"></i>
                                             <i class="fab fa-instagram fa-stack-1x"></i>
                                         </a>
                                     </span>
@@ -248,67 +472,73 @@
                   <li>Node</li>
                 </ul>
               </div>
-            </div>    <! card-container end -->
+            </div>
+        </div>    <! card-container end -->
             <div class="profile-go-back">
                 <button onClick="showTeam()"> GO BACK </button>
             </div>
             
        </div>         <!-- profile end -->
 
-            <div class="team" >
-              <center><h2>Our Team</h2></center>
-        <div class="row">
+
+          <div class="team" >
+              <h2>Our Team</h2>
+
+              <!--<div class='join-btn' onClick='teamJoin(this)'>
+                <b>NEXT</b> <i class="fas fa-arrow-right"></i>-->
+
+            <div class="row">
 
     <!--1st member-->
 
                <div id="harshit-jawla" class="our-team" onClick="showProfile(this.id)">
-                    <div class="top">
+                    <div class="tptop">
                         <b style="display:none">Founder</b>
                     </div>
-                    <div class="pic">
+                    <div class="tppic">
                         <img src="assets/images/team/default.jpg">
                     </div>
-                    <h3 class="title">Sandhir Glum</h3>
-                    <span class="post">Full Stack Dev</span>
+                    <h3 class="tptitle">Sandhir Glum</h3>
+                    <span class="tppost">Full Stack Dev</span>
                 </div>
 
     <!--2nd member-->
 
                <div id="ketan-sharma" class="our-team" onClick="showProfile(this.id)">
-                    <div class="top">
+                    <div class="tptop">
                         <b style="display:none">Founder</b>
                     </div>
-                    <div class="pic">
+                    <div class="tppic">
                         <img src="assets/images/team/default.jpg">
                     </div>
-                    <h3 class="title">Sandhir Glum</h3>
-                    <span class="post">Full Stack Dev</span>
+                    <h3 class="tptitle">Sandhir Glum</h3>
+                    <span class="tppost">Full Stack Dev</span>
                 </div>
 
     <!--3rd member-->
     
                <div id="kartik-aggarwal" class="our-team" onClick="showProfile(this.id)">
-                    <div class="top">
+                    <div class="tptop">
                         <b style="display:none">Founder</b>
                     </div>
-                    <div class="pic">
+                    <div class="tppic">
                         <img src="assets/images/team/default.jpg">
                     </div>
-                    <h3 class="title">Sandhir Glum</h3>
-                    <span class="post">Full Stack Dev</span>
+                    <h3 class="tptitle">Sandhir Glum</h3>
+                    <span class="tppost">Full Stack Dev</span>
                 </div>
 
     <!--4th member-->
 
                <div id="siddharth-gupta" class="our-team" onClick="showProfile(this.id)">
-                    <div class="top">
+                    <div class="tptop">
                         <b style="display:none">Founder</b>
                     </div>
-                    <div class="pic">
+                    <div class="tppic">
                         <img src="assets/images/team/default.jpg">
                     </div>
-                    <h3 class="title">Sandhir Glum</h3>
-                    <span class="post">Full Stack Dev</span>
+                    <h3 class="tptitle">Sandhir Glum</h3>
+                    <span class="tppost">Full Stack Dev</span>
                 </div>
 
 
@@ -455,17 +685,21 @@
   </div>
   <ul class="outer-nav">
     <li class="is-active">Home</li>
-    <li>Works</li>
+    <li>Goals</li>
+    <li>Services</li>
+    <li>Clients</li>
     <li>Team</li>
-    <li>Career</li>
+    <li>Join</li>
     <li>Contact</li>
     <li>Hire us</li>
   </ul>
 </div>
 
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="assets/js/portfunc.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
+<script src="assets/js/compo.js"></script>
 </body>
 </html>
