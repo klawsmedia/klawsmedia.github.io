@@ -20,7 +20,7 @@
 
 .scontainer 
   position: relative
-  left: calc(50% - 280px)
+  left: 10%
   display: grid
   grid-template-columns: repeat(5, 1fr)
 
@@ -29,6 +29,7 @@
     transform: scale(0.8)
 
   @media (max-width: 600px)
+    left: -55%
     top: -40px
     margin-left: 50%
     grid-template-columns: repeat(2, 1fr)
@@ -43,18 +44,14 @@
   display: flex
   height: 280px
   width: 200px
-  background-color: #17141d
   box-shadow: -1rem 0 3rem #000
   border-radius: 10px
   /*   margin-left: -50px; */
-  transition: 0.4s ease-out
+  transition: 4.4s ease-out
   position: relative
-  left: 0px
-  backdrop-filter: blur(16px) saturate(180%)
   -webkit-backdrop-filter: blur(16px) saturate(180%)
   background-color: rgba(17, 25, 40, 0.75)
   border-radius: 12px
-  border: 1px solid rgba(255, 255, 255, 0.125)
   
   
 .scard:not(:first-child) 
